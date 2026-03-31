@@ -1,0 +1,121 @@
+.comparison-section {
+  padding: 80px 0;
+  background-color: var(--bg-dark);
+}
+
+.text-center { text-align: center; }
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.comparison-card {
+  padding: 40px;
+  border-radius: 16px;
+  background: var(--bg-slate);
+}
+
+.chaos-card {
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  box-shadow: inset 0 0 60px rgba(220, 38, 38, 0.05);
+}
+
+.plan-card {
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.05), var(--bg-slate));
+  position: relative;
+}
+
+/* Subtle glowing border top for plan */
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #10b981;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.chaos-icon { color: #ef4444; }
+.plan-icon { color: #10b981; }
+
+.card-header h3 {
+  font-size: 2rem;
+  margin-top: 16px;
+  color: var(--text-primary);
+}
+
+.comparison-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.comparison-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0,0,0,0.2);
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.comparison-list li:hover {
+  transform: translateX(4px);
+}
+
+.plan-list li {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.icon-box {
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--text-muted);
+}
+
+.icon-box-green {
+  background: rgba(16, 185, 129, 0.1);
+  padding: 12px;
+  border-radius: 50%;
+  color: #10b981;
+}
+
+.comparison-list li div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.comparison-list li strong {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+
+.comparison-list li p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}

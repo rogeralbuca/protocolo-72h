@@ -1,0 +1,107 @@
+:root {
+  /* Colors */
+  --bg-dark: #0A0A0A; /* Deep dark background */
+  --bg-slate: #0f172a; /* Slate 900 for gradients/cards */
+  --bg-card: #1e293b; /* Slate 800 */
+  
+  --text-primary: #f8fafc; /* Snow white */
+  --text-muted: #94a3b8; /* Slate 400 */
+  
+  --accent-action: #ea580c; /* Tactical Orange */
+  --accent-action-hover: #f97316;
+  
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(249, 115, 22, 0.3);
+
+  /* Typography */
+  --font-inter: 'Inter', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-inter);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Base Globals */
+h1, h2, h3, h4 {
+  font-family: var(--font-oswald);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--accent-action);
+}
+
+/* Animations Global */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(234, 88, 12, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Reusable Components */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-action);
+  color: #fff;
+  font-family: var(--font-oswald);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+}
+
+.cta-button:hover {
+  background-color: var(--accent-action-hover);
+  transform: translateY(-2px);
+}

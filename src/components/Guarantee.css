@@ -1,0 +1,26 @@
+.guarantee {
+  padding: 60px 0 100px;
+  background-color: var(--bg-dark);
+}
+
+.guarantee-box {
+  background: rgba(30, 41, 59, 0.3);
+  border: 1px dashed rgba(16, 185, 129, 0.5); /* Emerald dash */
+  border-radius: 12px;
+  padding: 48px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.guarantee-icon {
+  color: #10b981; /* Emerald/Safe green */
+  margin-bottom: 24px;
+}
+
+.guarantee-box p {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
