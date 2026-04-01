@@ -4,10 +4,6 @@ import './Hero.css';
 export function Hero() {
   return (
     <section className="hero">
-      <video autoPlay loop muted playsInline className="hero-video-bg">
-        {/* Recomendação: Baixe um vídeo de nuvens/tempestade gratuitas em Pexels.com e salve como bg-video.mp4 na pasta public */}
-        <source src="/bg-video.mp4" type="video/mp4" />
-      </video>
       <div className="hero-overlay"></div>
       <div className="container hero-content">
 

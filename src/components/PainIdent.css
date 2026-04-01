@@ -1,21 +1,29 @@
 .pain-ident {
-  background-color: #0d0d0d;
-  color: #fff;
-  padding: 80px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.95) 100%), url('/bg-problem.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  padding: 100px 0;
+  border-bottom: 1px solid var(--border-light);
 }
+
 .pain-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
+
 .pain-subtitle {
   font-size: 1.25rem;
-  color: #a0a0a0;
+  color: var(--text-muted);
   margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
 .pain-highlight {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  color: #e53e3e;
+  color: var(--accent-action);
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -23,51 +31,103 @@
 .pain-grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 24px;
   margin-bottom: 60px;
   flex-wrap: wrap;
 }
+
 .pain-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  color: #e53e3e;
-  font-weight: bold;
-  font-size: 1.25rem;
-  background: rgba(229, 62, 62, 0.1);
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid rgba(229, 62, 62, 0.2);
+  gap: 12px;
+  background: transparent;
   min-width: 200px;
+  position: relative;
+  text-align: center;
 }
-.pain-item span {
-  color: #fff;
+
+.pain-icon-main {
+  color: var(--text-muted);
+  position: relative;
+}
+
+/* Simulating the orange accents from the print */
+.pain-item:nth-child(1) .pain-icon-main { stroke: var(--text-primary); }
+.pain-item:nth-child(2) .pain-icon-main { stroke: var(--text-primary); }
+.pain-item:nth-child(3) .pain-icon-main { stroke: var(--text-primary); }
+.pain-item:nth-child(4) .pain-icon-main { stroke: var(--text-primary); color: var(--accent-action); }
+
+.pain-item::after {
+  content: 'X';
+  position: absolute;
+  top: 15px;
+  font-size: 20px;
+  color: var(--accent-action);
+  font-family: var(--font-inter);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pain-item:nth-child(1)::after { display: none; /* First icon uses native plug zap */ }
+.pain-item:nth-child(2)::after { top: 12px; }
+.pain-item:nth-child(3)::after { top: 20px; left: 52%; font-size: 16px; }
+.pain-item:nth-child(4)::after { display: none; }
+
+.pain-item-title {
+  display: block;
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  margin-bottom: 2px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.pain-item-desc {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: var(--font-inter);
+  letter-spacing: 0;
+  text-transform: none;
 }
 .pain-content {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
 }
+
 .pain-question {
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.25rem;
+  line-height: 1.6;
   margin-bottom: 60px;
+  color: var(--text-primary);
 }
-.pain-contradiction {
-  background: #151515;
-  padding: 40px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  border-left: 4px solid #4a5568;
-  text-align: left;
-}
-.pain-contradiction h3 {
+
+.pain-question strong {
   font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #cbd5e0;
+  color: var(--accent-secondary);
+  display: block;
+  margin: 10px 0;
 }
+
+.pain-contradiction {
+  background: var(--bg-slate);
+  padding: 40px;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--accent-secondary);
+  text-align: left;
+  position: relative;
+}
+
+.pain-contradiction h3 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
 .pain-lack-list {
   list-style: none;
   padding: 0;
@@ -76,35 +136,50 @@
   flex-direction: column;
   gap: 15px;
 }
+
 .pain-lack-list li {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.25rem;
-  color: #fc8181;
-  font-weight: bold;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  font-family: var(--font-oswald);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 .lack-icon {
-  color: #e53e3e;
+  color: var(--accent-action);
 }
+
 .pain-worst {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
 }
+
 .pain-belief {
   text-align: center;
   padding: 40px;
-  background: linear-gradient(135deg, #1a202c, #2d3748);
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.8);
 }
+
 .belief-highlight {
-  font-size: 1.25rem;
-  color: #a0aec0;
+  font-size: 1.125rem;
+  color: var(--text-muted);
   margin-bottom: 20px;
+  line-height: 1.6;
 }
+
 .belief-solution {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-primary);
   text-transform: uppercase;
+  font-family: var(--font-oswald);
+  letter-spacing: 2px;
 }

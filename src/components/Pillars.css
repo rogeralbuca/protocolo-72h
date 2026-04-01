@@ -1,9 +1,7 @@
 .pillars-section {
   padding: 100px 0;
-  background-color: var(--bg-slate);
-  background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.65)), url('/bg-tactical.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.95) 100%), url('/bg-pillars.png') no-repeat center center;
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   position: relative;
 }
@@ -23,28 +21,44 @@
 
 .pillar-step {
   display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  background: var(--bg-dark);
-  padding: 40px;
-  border-radius: 16px;
-  border-left: 4px solid var(--accent-action);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  align-items: stretch;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-top: none;
 }
 
-.step-number {
-  width: 72px;
-  height: 72px;
-  background: rgba(234, 88, 12, 0.1);
-  color: var(--accent-action);
-  font-size: 2.5rem;
-  font-family: var(--font-oswald);
-  font-weight: 700;
+.pillar-step:first-child {
+  border-top: 1px solid var(--border-light);
+}
+
+.pillar-content {
+  background: var(--bg-card);
+  padding: 32px 40px;
+  border-left: 6px solid var(--accent-secondary);
+  flex-grow: 1;
+}
+
+.pillar-step::after {
+  display: none;
+}
+
+.step-number-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  flex-shrink: 0;
+  width: 120px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-oswald);
+  font-size: 3.5rem;
+  font-weight: 800;
+  gap: 8px;
+}
+
+.step-number-wrapper .bracket {
+  color: var(--text-muted);
+  font-weight: 300;
+  font-size: 4rem;
 }
 
 .pillar-content h3 {
@@ -67,30 +81,22 @@
 }
 
 .pillar-icons svg {
-  color: #10b981; /* Green success accent */
+  color: var(--accent-action);
 }
 
-/* Connecting line logic */
+/* Connecting line logic removed for compact log feel */
 .pillar-divider {
-  height: 60px;
-  border-left: 2px dashed rgba(255, 255, 255, 0.1);
-  margin-left: 76px; /* 40px padding + 36px half circle */
+  display: none;
 }
 
 @media (max-width: 600px) {
   .pillar-step {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
-  .pillar-divider {
-    margin-left: 50%;
-    height: 40px;
-  }
-  .pillar-icons {
-    justify-content: center;
-  }
-  .step-number {
-    margin-bottom: -10px;
+  
+  .step-number-wrapper {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--border-light);
   }
 }

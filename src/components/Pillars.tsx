@@ -10,8 +10,12 @@ export function Pillars() {
 
         <div className="pillars-container">
 
-          <div className="pillar-step">
-            <div className="step-number">1</div>
+          <div className="pillar-step protocol-step">
+            <div className="step-number-wrapper">
+              <span className="bracket">[</span>
+              <span className="number">1</span>
+              <span className="bracket">]</span>
+            </div>
             <div className="pillar-content">
               <h3>Fortificação e Recursos Críticos</h3>
               <p>Mapeie os pontos vulneráveis da casa e garanta uma reserva estratégica de água e energia off-grid para o cenário mais demorado.</p>
@@ -23,8 +27,12 @@ export function Pillars() {
 
           <div className="pillar-divider"></div>
 
-          <div className="pillar-step">
-            <div className="step-number">2</div>
+          <div className="pillar-step protocol-step">
+            <div className="step-number-wrapper">
+              <span className="bracket">[</span>
+              <span className="number">2</span>
+              <span className="bracket">]</span>
+            </div>
             <div className="pillar-content">
               <h3>Nutrição e Saúde de Emergência</h3>
               <p>Crie um estoque de alimentos de fácil preparo (sem cocção pesada) e tenha as mãos um kit médico focado em trauma e degradação sanitária.</p>
@@ -36,8 +44,12 @@ export function Pillars() {
 
           <div className="pillar-divider"></div>
 
-          <div className="pillar-step">
-            <div className="step-number">3</div>
+          <div className="pillar-step protocol-step">
+            <div className="step-number-wrapper">
+              <span className="bracket">[</span>
+              <span className="number">3</span>
+              <span className="bracket">]</span>
+            </div>
             <div className="pillar-content">
               <h3>Comunicação e Plano de Evasão</h3>
               <p>Tenha códigos familiares indetectáveis de encontro e rotas com mapa físico prontas caso a permanência na base deixe de ser uma opção viável.</p>

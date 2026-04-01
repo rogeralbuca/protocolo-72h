@@ -4,18 +4,18 @@
 }
 
 .guarantee-box {
-  background: rgba(30, 41, 59, 0.3);
-  border: 1px dashed rgba(16, 185, 129, 0.5); /* Emerald dash */
-  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--text-primary);
   padding: 48px;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  transition: all 0.3s ease;
+  position: relative;
 }
 
 .guarantee-icon {
-  color: #10b981; /* Emerald/Safe green */
+  color: var(--text-primary);
   margin-bottom: 24px;
 }
 

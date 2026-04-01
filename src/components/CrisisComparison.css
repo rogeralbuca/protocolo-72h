@@ -1,6 +1,8 @@
 .comparison-section {
   padding: 80px 0;
-  background-color: var(--bg-dark);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.95) 100%), url('/bg-target.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .text-center { text-align: center; }
@@ -14,32 +16,19 @@
 
 .comparison-card {
   padding: 40px;
-  border-radius: 16px;
-  background: var(--bg-slate);
+  background: var(--bg-card);
+  position: relative;
+  border: 1px solid var(--border-light);
 }
 
 .chaos-card {
-  border: 1px solid rgba(220, 38, 38, 0.3);
-  box-shadow: inset 0 0 60px rgba(220, 38, 38, 0.05);
+  border-top: 4px solid #ef4444;
+  box-shadow: inset 0 0 60px rgba(239, 68, 68, 0.05);
 }
 
 .plan-card {
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  background: linear-gradient(180deg, rgba(16, 185, 129, 0.05), var(--bg-slate));
-  position: relative;
-}
-
-/* Subtle glowing border top for plan */
-.plan-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #10b981;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-top: 4px solid var(--accent-action);
+  background: linear-gradient(180deg, rgba(234, 88, 12, 0.05), var(--bg-card));
 }
 
 .card-header {
@@ -51,7 +40,7 @@
 }
 
 .chaos-icon { color: #ef4444; }
-.plan-icon { color: #10b981; }
+.plan-icon { color: var(--accent-action); }
 
 .card-header h3 {
   font-size: 2rem;
@@ -70,33 +59,32 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.5);
   padding: 16px;
-  border-radius: 8px;
+  border: 1px solid var(--border-light);
   transition: transform 0.2s ease;
 }
 
 .comparison-list li:hover {
   transform: translateX(4px);
+  border-color: rgba(255,255,255,0.2);
 }
 
 .plan-list li {
-  background: rgba(16, 185, 129, 0.05);
-  border: 1px solid rgba(16, 185, 129, 0.1);
+  background: rgba(234, 88, 12, 0.05);
+  border-color: rgba(234, 88, 12, 0.2);
 }
 
 .icon-box {
   background: rgba(255,255,255,0.05);
   padding: 12px;
-  border-radius: 50%;
   color: var(--text-muted);
 }
 
 .icon-box-green {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(234, 88, 12, 0.1);
   padding: 12px;
-  border-radius: 50%;
-  color: #10b981;
+  color: var(--accent-action);
 }
 
 .comparison-list li div:nth-child(2) {

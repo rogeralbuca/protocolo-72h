@@ -1,22 +1,26 @@
 :root {
-  /* Colors */
-  --bg-dark: #0A0A0A; /* Deep dark background */
-  --bg-slate: #0f172a; /* Slate 900 for gradients/cards */
-  --bg-card: #1e293b; /* Slate 800 */
+  /* Colors - FBI Terminal & Tactical Slate */
+  --bg-dark: #11151c; /* Deep slate black */
+  --bg-slate: #1f2937; /* Terminal slate */
+  --bg-card: #161c24; /* Card background */
+  --bg-section-alt: #1a202a; /* Alternate section for clear division */
   
-  --text-primary: #f8fafc; /* Snow white */
-  --text-muted: #94a3b8; /* Slate 400 */
+  --text-primary: #f8fafc; /* Crisp white */
+  --text-muted: #94a3b8; /* Cool gray */
+  --text-dark: #050505; /* For inverted text */
   
-  --accent-action: #ea580c; /* Tactical Orange */
+  --accent-action: #ea580c; /* Tactical Orange (Alert) */
   --accent-action-hover: #f97316;
+  --accent-secondary: #4ade80; /* Safe Terminal Green */
   
-  --border-light: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(249, 115, 22, 0.3);
+  --border-light: rgba(255, 255, 255, 0.15);
+  --border-accent: rgba(74, 222, 128, 0.4);
 
   /* Typography */
-  --font-inter: 'Inter', sans-serif;
-  --font-oswald: 'Oswald', sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-oswald: 'Oswald', system-ui, sans-serif;
 }
+
 
 * {
   margin: 0;
@@ -30,19 +34,28 @@ html {
   color: var(--text-primary);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
 }
+
 
 /* Base Globals */
 h1, h2, h3, h4 {
   font-family: var(--font-oswald);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 strong {
@@ -52,7 +65,24 @@ strong {
 
 .highlight {
   color: var(--accent-action);
+  display: inline-block;
 }
+
+.highlight-green {
+  color: var(--accent-secondary);
+}
+
+section {
+  padding: 80px 0;
+  border-bottom: 2px solid var(--border-light);
+  position: relative;
+  box-shadow: inset 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-section-alt);
+}
+
 
 /* Animations Global */
 @keyframes fadeInUp {
@@ -89,19 +119,33 @@ strong {
   color: #fff;
   font-family: var(--font-oswald);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 2px;
   text-decoration: none;
-  padding: 16px 32px;
-  border-radius: 4px;
+  padding: 20px 48px;
   border: none;
+  clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 16px, 100% calc(100% - 16px), calc(100% - 16px) 100%, 16px 100%, 0 calc(100% - 16px), 0 16px);
   cursor: pointer;
-  transition: all 0.3s ease;
-  animation: pulseGlow 2s infinite;
-  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.cta-button::before {
+  content: '[';
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+}
+
+.cta-button::after {
+  content: ']';
+  margin-left: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
 }
 
 .cta-button:hover {
   background-color: var(--accent-action-hover);
-  transform: translateY(-2px);
+  transform: scale(1.02);
 }

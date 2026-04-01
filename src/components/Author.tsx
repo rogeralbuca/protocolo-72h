@@ -4,9 +4,18 @@ export function Author() {
   return (
     <section className="author" id="author">
       <div className="container author-container">
-        <div className="author-image-placeholder">
-          {/* Espaço para colocar a foto real do autor do Produto posteriormente */}
-          <div className="image-fallback">?</div>
+        <div className="dossier-card">
+          <div className="dossier-image">
+            <div className="corner corner-tl"></div>
+            <div className="corner corner-tr"></div>
+            <div className="corner corner-bl"></div>
+            <div className="corner corner-br"></div>
+            <div className="image-fallback">?</div>
+          </div>
+          <div className="dossier-quote-box">
+             <p>"Não trate preparação como hobby. Isso é responsabilidade. A maioria das famílias não sobrevive às primeiras 72 horas."</p>
+             <span className="dossier-author-name">- Roger Albuquerque</span>
+          </div>
         </div>
         <div className="author-text">
           <h2 className="section-title">Sobre Quem Criou</h2>

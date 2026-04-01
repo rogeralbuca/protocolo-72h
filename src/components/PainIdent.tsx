@@ -1,4 +1,4 @@
-import { AlertCircle, ZapOff, WifiOff, Droplet } from 'lucide-react';
+import { AlertCircle, PlugZap, RadioTower, Droplets, UtensilsCrossed } from 'lucide-react';
 import './PainIdent.css';
 
 export function PainIdent() {
@@ -12,9 +12,34 @@ export function PainIdent() {
         </div>
 
         <div className="pain-grid">
-          <div className="pain-item"><ZapOff size={32} /><span>Sem energia.</span></div>
-          <div className="pain-item"><Droplet size={32} /><span>Sem água.</span></div>
-          <div className="pain-item"><WifiOff size={32} /><span>Sem comunicação.</span></div>
+          <div className="pain-item">
+            <PlugZap size={40} className="pain-icon-main" />
+            <div className="pain-item-text">
+              <span className="pain-item-title">Fim da Energia.</span>
+              <span className="pain-item-desc">Cegueira inicial.</span>
+            </div>
+          </div>
+          <div className="pain-item">
+            <RadioTower size={40} className="pain-icon-main" />
+            <div className="pain-item-text">
+              <span className="pain-item-title">Queda de Comunicação.</span>
+              <span className="pain-item-desc">Isolamento tático.</span>
+            </div>
+          </div>
+          <div className="pain-item">
+            <Droplets size={40} className="pain-icon-main" />
+            <div className="pain-item-text">
+              <span className="pain-item-title">Fim da Água Encanada.</span>
+              <span className="pain-item-desc">Racionamento crítico.</span>
+            </div>
+          </div>
+          <div className="pain-item">
+            <UtensilsCrossed size={40} className="pain-icon-main" />
+            <div className="pain-item-text">
+              <span className="pain-item-title">Fim dos Estoques.</span>
+              <span className="pain-item-desc">Colapso da ordem.</span>
+            </div>
+          </div>
         </div>
 
         <div className="pain-content">
