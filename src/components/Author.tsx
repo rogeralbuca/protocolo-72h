@@ -10,7 +10,7 @@ export function Author() {
             <div className="corner corner-tr"></div>
             <div className="corner corner-bl"></div>
             <div className="corner corner-br"></div>
-            <div className="image-fallback">?</div>
+            <img src="/author.png" alt="Roger Albuquerque" className="dossier-photo" />
           </div>
           <div className="dossier-quote-box">
              <p>"Não trate preparação como hobby. Isso é responsabilidade. A maioria das famílias não sobrevive às primeiras 72 horas."</p>
