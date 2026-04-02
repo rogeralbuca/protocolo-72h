@@ -79,7 +79,13 @@ export function CrisisComparison() {
           </div>
 
         </div>
+        
+      <div className="comparison-turn">
+        <h2>Não é o mais forte que assume o controle.<br /><span className="highlight-green">É o mais preparado.</span></h2>
       </div>
+      
+      </div>
+
     </section>
   );
 }

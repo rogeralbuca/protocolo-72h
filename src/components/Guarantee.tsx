@@ -1,4 +1,3 @@
-import { ShieldCheck } from 'lucide-react';
 import './Guarantee.css';
 
 export function Guarantee() {
@@ -6,7 +5,8 @@ export function Guarantee() {
     <section className="guarantee">
       <div className="container">
         <div className="guarantee-box">
-          <ShieldCheck className="guarantee-icon" size={64} />
+          <img src="/garantia.png" alt="Teste por 7 dias sem risco" className="guarantee-logo" />
+          
           <p className="guarantee-kicker">Teste por 7 dias sem risco</p>
           <h2 className="section-title">Você entra para ganhar clareza, não para correr risco</h2>
           <p>

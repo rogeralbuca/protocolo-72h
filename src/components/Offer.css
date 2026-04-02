@@ -129,12 +129,22 @@
   line-height: 1.7;
 }
 
-.offer-cta {
+.offer-cta-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
 }
 
-.offer-cta .cta-button {
+.offer-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.offer-cta-wrapper .cta-button {
   width: 100%;
 }
 

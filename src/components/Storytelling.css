@@ -3,7 +3,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: var(--text-primary);
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
   border-bottom: 2px solid var(--border-light);
 }
 
@@ -81,14 +81,15 @@
 .timeline-item-alert .timeline-content h3 {
   color: var(--text-primary);
 }
+
 .story-climax {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 80px;
   padding: 60px 40px;
   background: rgba(21, 28, 37, 0.94);
-  border: 1px solid rgba(255, 91, 77, 0.24);
-  border-top: 4px solid var(--accent-danger);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 4px solid var(--accent-action);
   position: relative;
 }
 
@@ -103,28 +104,4 @@
 .story-climax h3 {
   font-size: 2rem;
   color: var(--text-primary);
-}
-
-.story-turn {
-  text-align: center;
-  padding: 40px;
-  background: rgba(13, 17, 23, 0.86);
-  border: 1px solid var(--border-strong);
-}
-
-.story-turn p {
-  font-size: 1.25rem;
-  color: var(--text-soft);
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.story-turn h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.2;
-}
-
-.story-turn .highlight-green {
-  color: var(--accent-action);
 }

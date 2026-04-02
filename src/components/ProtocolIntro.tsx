@@ -5,17 +5,12 @@ export function ProtocolIntro() {
     <section className="protocol-intro">
       <div className="container">
         <div className="intro-comparison">
-          <p className="intro-text">
-            Existe uma diferença simples entre quem entra em pânico... e quem assume o controle em uma crise:
-          </p>
           <h2 className="intro-highlight">
             Um tem informação. <span className="highlight-green">O outro tem um plano.</span>
           </h2>
         </div>
 
         <div className="intro-box">
-          <p className="intro-created">Foi exatamente por isso que eu criei o:</p>
-
           <div className="intro-logo-wrapper">
             <h3 className="intro-logo">PROTOCOLO 72H</h3>
           </div>

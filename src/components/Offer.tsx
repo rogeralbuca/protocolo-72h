@@ -39,16 +39,21 @@ export function Offer() {
             </div>
 
             <div className="offer-justification">
-              <p className="offer-justification-title">Valor emocional da decisão</p>
               <p>
                 O preço não compra só um ebook. Compra clareza para agir, reduzir erro nas primeiras horas e proteger quem depende de você sem improviso.
               </p>
             </div>
 
-            <div className="offer-cta">
+            <div className="offer-cta-wrapper">
               <a href="https://pay.hotmart.com/F18680649I?bid=1774933351301" className="cta-button" target="_blank" rel="noopener noreferrer">
                 QUERO ESTAR PREPARADO AGORA
               </a>
+
+              <div className="offer-trust-row">
+                <span className="cta-guarantee">Pagamento 100% seguro</span>
+                <span className="cta-guarantee">Acesso imediato</span>
+                <span className="cta-guarantee">Garantia de 7 dias</span>
+              </div>
             </div>
           </div>
         </div>

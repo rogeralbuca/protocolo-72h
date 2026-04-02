@@ -108,3 +108,28 @@
     grid-template-columns: 1fr;
   }
 }
+
+.comparison-turn {
+  text-align: center;
+  padding: 40px;
+  background: rgba(13, 17, 23, 0.86);
+  border: 1px solid var(--border-strong);
+  margin: 60px auto 0;
+}
+
+.comparison-turn p {
+  font-size: 1.25rem;
+  color: var(--text-soft);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.comparison-turn h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.comparison-turn .highlight-green {
+  color: var(--accent-action);
+}

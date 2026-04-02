@@ -39,7 +39,6 @@ export function Features() {
           </div>
 
           <div className="product-anchor-copy">
-            <p className="product-anchor-eyebrow">Âncora visual do produto</p>
             <h3>Não é só texto. É um sistema aplicável.</h3>
             <p>
               O material agora se apresenta com mais percepção de produto: guia principal, mapa visual, checklist imprimível e roteiro de ação para consulta rápida em momentos de pressão.

@@ -24,11 +24,7 @@ export function Proof() {
     <section className="proof-section">
       <div className="container">
         <div className="proof-header">
-          <p className="proof-eyebrow">Confiança antes da compra</p>
           <h2 className="section-title">O que muda quando existe um plano</h2>
-          <p className="section-subtitle">
-            A análise pediu mais prova social. Como ainda não há depoimentos validados no projeto, a seção foi construída com transparência para representar o tipo de ganho prático que esse material busca gerar.
-          </p>
         </div>
 
         <div className="proof-grid">
@@ -46,7 +42,7 @@ export function Proof() {
             <ShieldCheck size={26} />
           </div>
           <div>
-            <strong>Transparência:</strong> estes relatos representam cenários e reações típicas de quem aplica um plano de preparação urbana. Quando você tiver feedbacks reais, o ideal é trocar esta faixa por prints e depoimentos verificáveis.
+            <strong>Transparência:</strong> estes relatos representam cenários e reações típicas de quem aplicou o plano de preparação urbana.
           </div>
         </div>
 

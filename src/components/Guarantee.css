@@ -41,3 +41,10 @@
   background: rgba(240, 103, 31, 0.06);
   color: var(--text-primary);
 }
+
+.guarantee-logo {
+  display: block;
+  width: min(350px, 34vw);
+  height: auto;
+  margin: 0 auto 25px;
+}

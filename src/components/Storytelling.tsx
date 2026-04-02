@@ -42,14 +42,10 @@ export function Storytelling() {
         </div>
 
         <div className="story-climax">
-          <p>E nesse momento… <strong>não dá mais pra "ver depois".</strong></p>
+          <p><span className="highlight-green">E nesse momento</span><strong> que não dá mais pra "ver depois".</strong></p>
           <h3>Ou você sabe o que fazer… Ou você improvisa sob pressão.</h3>
         </div>
 
-        <div className="story-turn">
-          <p>E é aqui que tudo muda:</p>
-          <h2>Não é o mais forte que assume o controle.<br /><span className="highlight-green">É o mais preparado.</span></h2>
-        </div>
       </div>
     </section>
   );
