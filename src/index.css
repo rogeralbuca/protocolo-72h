@@ -155,3 +155,66 @@ section:nth-child(even) {
   background-color: var(--accent-action-hover);
   transform: scale(1.02);
 }
+
+.audio-fallback-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid rgba(240, 103, 31, 0.3);
+  border-radius: 999px;
+  background: rgba(13, 17, 23, 0.92);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: audioControlIn 0.35s ease forwards;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.audio-fallback-button:hover {
+  background: rgba(26, 33, 43, 0.96);
+  transform: translateY(-1px);
+}
+
+.audio-fallback-button svg {
+  color: var(--accent-action);
+}
+
+.audio-fallback-button.is-active {
+  border-color: rgba(61, 220, 132, 0.4);
+}
+
+.audio-fallback-button.is-active svg {
+  color: var(--accent-success);
+}
+
+@keyframes audioControlIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 680px) {
+  .audio-fallback-button {
+    right: 14px;
+    bottom: 14px;
+    padding: 11px 13px;
+  }
+
+  .audio-fallback-button span {
+    display: none;
+  }
+}
