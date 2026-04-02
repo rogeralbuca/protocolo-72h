@@ -13,22 +13,29 @@ export function Author() {
             <img src="/author.png" alt="Roger Albuquerque" className="dossier-photo" />
           </div>
           <div className="dossier-quote-box">
-             <p>"Não trate preparação como hobby. Isso é responsabilidade. A maioria das famílias não sobrevive às primeiras 72 horas."</p>
-             <span className="dossier-author-name">- Roger Albuquerque</span>
+            <p>"Não trate preparação como hobby. Isso é responsabilidade. A maioria das famílias não sobrevive às primeiras 72 horas."</p>
+            <span className="dossier-author-name">- Roger Albuquerque</span>
           </div>
         </div>
+
         <div className="author-text">
           <h2 className="section-title">Sobre Quem Criou</h2>
           <p>
-            Eu não criei isso porque sou militar ou fanático por sobrevivencialismo extremo.
-            <strong> Criei porque sou pai.</strong>
+            Eu não criei o <strong>Protocolo 72H</strong> para alimentar medo.
+            Criei porque entendi uma verdade simples: quando tudo falha, a responsabilidade continua sendo sua.
           </p>
           <p>
-            Percebi que se o sistema vacilasse hoje, eu não teria um plano claro. Preparação não é sobre força brural.
-            <strong> É sobre estrutura.</strong>
+            Sou pai. E foi isso que mudou a forma como eu enxergo preparação.
+            Não como hobby. Não como exagero. Mas como a diferença entre improvisar sob pressão e ter um plano claro quando sua família mais precisa de você.
           </p>
           <p>
-            Se você é pai, você entende. A responsabilidade é sua, e delegar essa segurança ao acaso é um erro que a maioria descobre apenas quando já é tarde demais. Você pode resolver isso hoje.
+            Diante de uma crise, ou um colapso urbano, a maioria percebe tarde demais que nunca definiu o básico:
+            água, alimento, comunicação, segurança e função de cada um.
+          </p>
+          <p>
+            O Protocolo 72H nasceu para resolver isso de forma prática.
+            Sem paranoia. Sem fantasia. Sem complicação.
+            Só estrutura, clareza e direção para que qualquer pessoa comum esteja pronto para proteger quem ama.
           </p>
         </div>
       </div>

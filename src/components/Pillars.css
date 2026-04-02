@@ -17,14 +17,26 @@
   display: flex;
   flex-direction: column;
   gap: 0;
+  position: relative;
+}
+
+.pillars-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 112px;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(240, 103, 31, 0.85), rgba(240, 103, 31, 0.3));
 }
 
 .pillar-step {
   display: flex;
   align-items: stretch;
   background: transparent;
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-strong);
   border-top: none;
+  position: relative;
 }
 
 .pillar-step:first-child {
@@ -33,9 +45,9 @@
 
 .pillar-content {
   background: var(--bg-card);
-  padding: 32px 40px;
-  border-left: 6px solid var(--accent-secondary);
+  padding: 32px 40px 32px 32px;
   flex-grow: 1;
+  position: relative;
 }
 
 .pillar-step::after {
@@ -46,17 +58,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
+  width: 112px;
+  min-width: 112px;
   background: transparent;
   color: var(--text-primary);
-  font-family: var(--font-oswald);
+  font-family: var(--font-display);
   font-size: 3.5rem;
   font-weight: 800;
   gap: 8px;
+  position: relative;
+  z-index: 2;
 }
 
 .step-number-wrapper .bracket {
-  color: var(--text-muted);
+  color: var(--accent-support);
   font-weight: 300;
   font-size: 4rem;
 }
@@ -77,7 +92,7 @@
 .pillar-icons {
   display: flex;
   gap: 24px;
-  color: var(--text-muted);
+  color: var(--text-soft);
 }
 
 .pillar-icons svg {
@@ -92,6 +107,10 @@
 @media (max-width: 600px) {
   .pillar-step {
     flex-direction: column;
+  }
+
+  .pillars-container::before {
+    display: none;
   }
   
   .step-number-wrapper {

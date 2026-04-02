@@ -64,7 +64,7 @@
   top: 15px;
   font-size: 20px;
   color: var(--accent-action);
-  font-family: var(--font-inter);
+  font-family: var(--font-body);
   font-weight: 800;
   line-height: 1;
 }
@@ -78,7 +78,7 @@
   display: block;
   color: var(--text-primary);
   font-size: 1.125rem;
-  font-family: var(--font-inter);
+  font-family: var(--font-body);
   font-weight: 400;
   margin-bottom: 2px;
   letter-spacing: 0;
@@ -89,7 +89,7 @@
   display: block;
   color: var(--text-muted);
   font-size: 0.9rem;
-  font-family: var(--font-inter);
+  font-family: var(--font-body);
   letter-spacing: 0;
   text-transform: none;
 }
@@ -108,7 +108,7 @@
 
 .pain-question strong {
   font-size: 1.5rem;
-  color: var(--accent-secondary);
+  color: var(--accent-action);
   display: block;
   margin: 10px 0;
 }
@@ -117,7 +117,7 @@
   background: var(--bg-slate);
   padding: 40px;
   margin-bottom: 40px;
-  border-left: 4px solid var(--accent-secondary);
+  border-left: 4px solid var(--accent-action);
   text-align: left;
   position: relative;
 }
@@ -143,9 +143,9 @@
   gap: 10px;
   font-size: 1.125rem;
   color: var(--text-primary);
-  font-family: var(--font-oswald);
+  font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 
 .lack-icon {
@@ -180,6 +180,6 @@
   font-weight: 800;
   color: var(--text-primary);
   text-transform: uppercase;
-  font-family: var(--font-oswald);
-  letter-spacing: 2px;
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
 }

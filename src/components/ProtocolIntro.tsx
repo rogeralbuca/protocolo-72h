@@ -1,4 +1,3 @@
-import { Shield } from 'lucide-react';
 import './ProtocolIntro.css';
 
 export function ProtocolIntro() {
@@ -18,7 +17,6 @@ export function ProtocolIntro() {
           <p className="intro-created">Foi exatamente por isso que eu criei o:</p>
 
           <div className="intro-logo-wrapper">
-            <Shield size={48} className="intro-shield" fill="currentColor" />
             <h3 className="intro-logo">PROTOCOLO 72H</h3>
           </div>
 

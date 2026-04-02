@@ -18,17 +18,18 @@
   padding: 40px;
   background: var(--bg-card);
   position: relative;
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.24);
 }
 
 .chaos-card {
-  border-top: 4px solid #ef4444;
-  box-shadow: inset 0 0 60px rgba(239, 68, 68, 0.05);
+  border-top: 4px solid var(--accent-danger);
+  background: rgba(26, 33, 43, 0.94);
 }
 
 .plan-card {
-  border-top: 4px solid var(--accent-action);
-  background: linear-gradient(180deg, rgba(234, 88, 12, 0.05), var(--bg-card));
+  border-top: 4px solid var(--accent-success);
+  background: rgba(26, 33, 43, 0.94);
 }
 
 .card-header {
@@ -39,8 +40,8 @@
   text-align: center;
 }
 
-.chaos-icon { color: #ef4444; }
-.plan-icon { color: var(--accent-action); }
+.chaos-icon { color: var(--accent-danger); }
+.plan-icon { color: var(--accent-success); }
 
 .card-header h3 {
   font-size: 2rem;
@@ -59,9 +60,9 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(13, 17, 23, 0.62);
   padding: 16px;
-  border: 1px solid var(--border-light);
+  border: 1px solid rgba(167, 181, 198, 0.16);
   transition: transform 0.2s ease;
 }
 
@@ -71,20 +72,20 @@
 }
 
 .plan-list li {
-  background: rgba(234, 88, 12, 0.05);
-  border-color: rgba(234, 88, 12, 0.2);
+  background: rgba(13, 17, 23, 0.62);
+  border-color: rgba(61, 220, 132, 0.24);
 }
 
 .icon-box {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 91, 77, 0.08);
   padding: 12px;
-  color: var(--text-muted);
+  color: var(--accent-danger);
 }
 
 .icon-box-green {
-  background: rgba(234, 88, 12, 0.1);
+  background: rgba(61, 220, 132, 0.08);
   padding: 12px;
-  color: var(--accent-action);
+  color: var(--accent-success);
 }
 
 .comparison-list li div:nth-child(2) {

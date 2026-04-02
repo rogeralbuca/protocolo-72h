@@ -14,10 +14,10 @@
 }
 .intro-text {
   font-size: 1.25rem;
-  color: var(--text-muted);
+  color: var(--text-soft);
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.12em;
 }
 
 .intro-highlight {
@@ -27,12 +27,12 @@
 }
 
 .highlight-green {
-  color: var(--accent-secondary);
-  border-bottom: 2px solid var(--accent-secondary);
+  color: var(--accent-action);
+  border-bottom: 2px solid rgba(240, 103, 31, 0.4);
 }
 .intro-box {
   background: var(--bg-card);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-strong);
   border-top: 4px solid var(--accent-action);
   padding: 60px;
   max-width: 800px;
@@ -44,9 +44,9 @@
 
 .intro-created {
   font-size: 1.1rem;
-  color: var(--text-muted);
+  color: var(--text-soft);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.12em;
   margin-bottom: 30px;
 }
 
@@ -65,7 +65,7 @@
 .intro-logo {
   font-size: 3rem;
   font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: 0.02em;
   margin: 0;
 }
 .intro-description {
@@ -90,13 +90,14 @@
 .intro-benefits li {
   font-size: 1.125rem;
   font-weight: bold;
-  font-family: var(--font-oswald);
+  font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--accent-secondary);
-  background: rgba(234, 88, 12, 0.05);
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  background: rgba(13, 17, 23, 0.45);
   padding: 12px 24px;
-  border: 1px solid rgba(234, 88, 12, 0.2);
+  border: 1px solid rgba(240, 103, 31, 0.24);
+  box-shadow: inset 0 0 0 1px rgba(240, 103, 31, 0.04);
 }
 
 .intro-action {

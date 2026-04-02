@@ -1,24 +1,30 @@
 :root {
-  /* Colors - FBI Terminal & Tactical Slate */
-  --bg-dark: #11151c; /* Deep slate black */
-  --bg-slate: #1f2937; /* Terminal slate */
-  --bg-card: #161c24; /* Card background */
-  --bg-section-alt: #1a202a; /* Alternate section for clear division */
-  
-  --text-primary: #f8fafc; /* Crisp white */
-  --text-muted: #94a3b8; /* Cool gray */
-  --text-dark: #050505; /* For inverted text */
-  
-  --accent-action: #ea580c; /* Tactical Orange (Alert) */
-  --accent-action-hover: #f97316;
-  --accent-secondary: #4ade80; /* Safe Terminal Green */
-  
-  --border-light: rgba(255, 255, 255, 0.15);
-  --border-accent: rgba(74, 222, 128, 0.4);
+  --bg-dark: #0d1117;
+  --bg-slate: #151c25;
+  --bg-card: #1a212b;
+  --bg-card-soft: #202a36;
+  --bg-section-alt: #121821;
+
+  --text-primary: #f7f3ec;
+  --text-muted: #94a3b8;
+  --text-soft: #b7c3d2;
+  --text-dark: #050505;
+
+  --accent-action: #f0671f;
+  --accent-action-hover: #ff7b2f;
+  --accent-success: #3ddc84;
+  --accent-success-hover: #4ae693;
+  --accent-support: #8ea2b8;
+  --accent-secondary: #8ea2b8;
+  --accent-danger: #ff5b4d;
+
+  --border-light: rgba(167, 181, 198, 0.2);
+  --border-strong: rgba(167, 181, 198, 0.34);
+  --border-accent: rgba(240, 103, 31, 0.38);
 
   /* Typography */
-  --font-inter: 'Inter', system-ui, sans-serif;
-  --font-oswald: 'Oswald', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', Impact, sans-serif;
 }
 
 
@@ -29,7 +35,7 @@
 }
 
 html {
-  font-family: var(--font-inter);
+  font-family: var(--font-body);
   background-color: var(--bg-dark);
   color: var(--text-primary);
   scroll-behavior: smooth;
@@ -51,10 +57,10 @@ body {
 
 /* Base Globals */
 h1, h2, h3, h4 {
-  font-family: var(--font-oswald);
+  font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1.2;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
   margin-bottom: 1rem;
 }
 
@@ -69,7 +75,7 @@ strong {
 }
 
 .highlight-green {
-  color: var(--accent-secondary);
+  color: var(--accent-action);
 }
 
 section {
@@ -117,15 +123,15 @@ section:nth-child(even) {
   justify-content: center;
   background-color: var(--accent-action);
   color: #fff;
-  font-family: var(--font-oswald);
+  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.08em;
   text-decoration: none;
   padding: 20px 48px;
   border: none;
-  clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 16px, 100% calc(100% - 16px), calc(100% - 16px) 100%, 16px 100%, 0 calc(100% - 16px), 0 16px);
+  border-radius: 999px;
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;

@@ -2,12 +2,12 @@ import { Check } from 'lucide-react';
 import './Offer.css';
 
 const offerIncludes = [
-  "Protocolo completo (Guia Principal)",
-  "Mapa Visual 72H",
-  "Lista de Compras de Emergência",
-  "Roteiro prático para os primeiros 7 dias",
-  "Guia de aplicação dentro de apartamento/casa",
-  "Plano anti-procrastinação"
+  'Protocolo completo (guia principal)',
+  'Mapa visual 72H',
+  'Lista de compras de emergência',
+  'Roteiro prático para os primeiros 7 dias',
+  'Guia de aplicação em apartamento ou casa',
+  'Plano anti-procrastinação',
 ];
 
 export function Offer() {
@@ -17,11 +17,13 @@ export function Offer() {
         <div className="offer-content">
           <div className="offer-box">
             <div className="offer-header">
-              <h2>O que você garante HOJE</h2>
+              <h2>O que você garante hoje</h2>
               <div className="price-tag">
-                <span className="price-label">ESTÁ PRONTO. APENAS</span>
+                <span className="price-label">Está pronto. Apenas</span>
                 <span className="price-value">R$ 47</span>
-                <span className="price-compare">Menos que uma pizza. Muito mais valioso que improvisar.</span>
+                <span className="price-compare">
+                  Você pode gastar R$47 com algo que esquece amanhã ou usar isso para garantir que sua família não dependa da sorte.
+                </span>
               </div>
             </div>
 
@@ -36,9 +38,16 @@ export function Offer() {
               </ul>
             </div>
 
+            <div className="offer-justification">
+              <p className="offer-justification-title">Valor emocional da decisão</p>
+              <p>
+                O preço não compra só um ebook. Compra clareza para agir, reduzir erro nas primeiras horas e proteger quem depende de você sem improviso.
+              </p>
+            </div>
+
             <div className="offer-cta">
               <a href="https://pay.hotmart.com/F18680649I?bid=1774933351301" className="cta-button" target="_blank" rel="noopener noreferrer">
-                QUERO PROTEGER MINHA FAMÍLIA AGORA
+                QUERO ESTAR PREPARADO AGORA
               </a>
             </div>
           </div>
