@@ -24,9 +24,9 @@
   margin-bottom: 18px;
 }
 
-.final-decision-muted {
+.final-decision-action {
   display: block;
-  color: var(--text-muted);
+  color: var(--accent-action);
 }
 
 .final-decision-text {

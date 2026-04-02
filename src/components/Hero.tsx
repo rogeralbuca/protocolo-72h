@@ -15,11 +15,11 @@ export function Hero() {
           </h1>
 
           <p className="hero-subtitle">
-            Você não precisa ser sobrevivencialista, atleta ou forças especiais. Só precisa de um plano claro para agir nas primeiras 72 horas, mesmo morando em apartamento e começando do zero.
+            Você não precisa ser especialista em sobrevivencialista. Só precisa de um plano claro para agir nas primeiras 72 horas, mesmo morando em apartamento e começando do zero.
           </p>
 
           <p className="hero-urgent-text">
-            <strong>Crise não exige força. Exige antecipação e clareza.</strong>
+            <strong>Crise não exige força. Exige clareza e antecipação.</strong>
           </p>
 
           <div className="hero-cta-wrapper">

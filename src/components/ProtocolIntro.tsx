@@ -31,7 +31,7 @@ export function ProtocolIntro() {
 
           <div className="intro-cta-wrapper">
             <a href="https://pay.hotmart.com/F18680649I?bid=1774933351301" className="cta-button" target="_blank" rel="noopener noreferrer">
-              QUERO TER ACESSO AO PROTOCOLO 72H
+              QUERO TER ACESSO AGORA
             </a>
           </div>
         </div>

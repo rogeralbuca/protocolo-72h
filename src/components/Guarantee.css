@@ -3,15 +3,21 @@
   background-color: var(--bg-dark);
 }
 
+.guarantee-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
 .guarantee-box {
   background: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-top: 4px solid var(--accent-action);
   padding: 48px;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
+  width: min(100%, 800px);
+  margin: 0;
   box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
 }
 
@@ -35,11 +41,13 @@
 }
 
 .guarantee-strong {
-  margin-top: 18px;
+  width: min(100%, 800px);
   padding: 20px 24px;
   border: 1px solid rgba(240, 103, 31, 0.22);
   background: rgba(240, 103, 31, 0.06);
-  color: var(--text-primary);
+  color: var(--accent-action);
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .guarantee-logo {

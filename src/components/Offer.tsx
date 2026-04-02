@@ -2,12 +2,9 @@ import { Check } from 'lucide-react';
 import './Offer.css';
 
 const offerIncludes = [
-  'Protocolo completo (guia principal)',
+  'Protocolo completo 72H (guia principal)',
   'Mapa visual 72H',
-  'Lista de compras de emergência',
-  'Roteiro prático para os primeiros 7 dias',
-  'Guia de aplicação em apartamento ou casa',
-  'Plano anti-procrastinação',
+  'Checklist de compras para 72H',
 ];
 
 export function Offer() {
