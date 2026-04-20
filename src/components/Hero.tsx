@@ -23,7 +23,7 @@ export function Hero() {
           </p>
 
           <div className="hero-cta-wrapper">
-            <a href="https://pay.hotmart.com/FP72H?bid=1" className="cta-button" target="_blank" rel="noopener noreferrer">
+            <a href="#" className="cta-button">
               QUERO SABER EXATAMENTE O QUE FAZER
             </a>
           </div>
