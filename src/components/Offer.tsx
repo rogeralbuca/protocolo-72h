@@ -42,7 +42,7 @@ export function Offer() {
             </div>
 
             <div className="offer-cta-wrapper">
-              <a href="https://pay.hotmart.com/F18680649I?bid=1774933351301" className="cta-button" target="_blank" rel="noopener noreferrer">
+              <a href="https://pay.hotmart.com/FP72H?bid=1" className="cta-button" target="_blank" rel="noopener noreferrer">
                 QUERO ESTAR PREPARADO AGORA
               </a>
 
