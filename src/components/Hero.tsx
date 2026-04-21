@@ -22,7 +22,7 @@ export function Hero() {
           </h1>
 
           <p className="hero-subtitle">
-            Você não precisa ser especialista em sobrevivencialista. Só precisa de um plano claro para agir nas primeiras 72 horas, mesmo morando em apartamento e começando do zero.
+            Você não precisa ser especialista em sobrevivência. Só precisa de um plano claro para agir nas primeiras 72 horas, mesmo morando em apartamento e começando do zero.
           </p>
 
           <p className="hero-urgent-text">
