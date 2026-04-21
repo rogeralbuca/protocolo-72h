@@ -26,7 +26,7 @@ export function ProtocolIntro() {
           </ul>
 
           <div className="intro-action">
-            <strong>Apenas o que precisa ser feito… na ordem certa.</strong>
+            <strong>Apenas o que precisa ser feito... na ordem certa.</strong>
           </div>
 
           <div className="intro-cta-wrapper">

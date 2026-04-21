@@ -29,7 +29,7 @@ export function Storytelling() {
             <div className="timeline-icon"><Watch size={24} /></div>
             <div className="timeline-content">
               <h3>As horas passam... E nada volta.</h3>
-              <p>A tensão começa a subitamente preencher o silêncio da casa.</p>
+              <p>A tensão começa a preencher o silêncio da casa.</p>
             </div>
           </div>
           <div className="timeline-item timeline-item-alert">
@@ -42,8 +42,8 @@ export function Storytelling() {
         </div>
 
         <div className="story-climax">
-          <p><span className="highlight-green">E nesse momento</span><strong> que não dá mais pra "ver depois".</strong></p>
-          <h3>Ou você sabe o que fazer… Ou você improvisa sob pressão.</h3>
+          <p><span className="highlight-green">É nesse momento</span><strong> que não dá mais pra "ver depois".</strong></p>
+          <h3>Ou você sabe o que fazer... Ou você improvisa sob pressão.</h3>
         </div>
 
       </div>

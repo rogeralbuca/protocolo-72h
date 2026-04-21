@@ -9,7 +9,6 @@ export function Pillars() {
         <p className="section-subtitle text-center">Sua casa é o ponto mais seguro da sua família — desde que possua essa tríade vital ativa.</p>
 
         <div className="pillars-container">
-
           <div className="pillar-step protocol-step">
             <div className="step-number-wrapper">
               <span className="bracket">[</span>
@@ -35,7 +34,7 @@ export function Pillars() {
             </div>
             <div className="pillar-content">
               <h3>Nutrição e Saúde de Emergência</h3>
-              <p>Crie um estoque de alimentos de fácil preparo (sem cocção pesada) e tenha as mãos um kit médico focado em trauma e degradação sanitária.</p>
+              <p>Crie um estoque de alimentos de fácil preparo (sem cocção pesada) e tenha às mãos um kit médico focado em trauma e degradação sanitária.</p>
               <div className="pillar-icons">
                 <Utensils size={28} /><HeartPulse size={28} />
               </div>
@@ -58,7 +57,6 @@ export function Pillars() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

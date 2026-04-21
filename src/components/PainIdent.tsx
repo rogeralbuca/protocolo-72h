@@ -44,7 +44,7 @@ export function PainIdent() {
           </p>
 
           <div className="pain-contradiction">
-            <h3>A maioria dos pais vive uma contradição silenciosa.</h3>
+            <h2>A maioria dos pais vive uma contradição silenciosa.</h2>
             <p>No trabalho, você resolve. Você lidera. Você toma decisões. Mas quando o assunto é crise real...</p>
             <ul className="pain-lack-list">
               <li><X className="lack-icon" /> Falta clareza</li>

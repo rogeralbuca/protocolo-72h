@@ -10,7 +10,15 @@ export function Author() {
             <div className="corner corner-tr"></div>
             <div className="corner corner-bl"></div>
             <div className="corner corner-br"></div>
-            <img src="/author.webp" alt="Roger Albuquerque" className="dossier-photo" width="380" height="400" loading="lazy" />
+            <img
+              src="/author.webp"
+              alt="Roger Albuquerque"
+              className="dossier-photo"
+              width="380"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="dossier-quote-box">
             <p>"Não trate preparação como hobby. Isso é responsabilidade. A maioria das famílias não sobrevive às primeiras 72 horas."</p>
@@ -35,7 +43,7 @@ export function Author() {
           <p>
             O Protocolo 72H nasceu para resolver isso de forma prática.
             Sem paranoia. Sem fantasia. Sem complicação.
-            Só estrutura, clareza e direção para que qualquer pessoa comum esteja pronto para proteger quem ama.
+            Só estrutura, clareza e direção para que qualquer pessoa comum esteja pronta para proteger quem ama.
           </p>
         </div>
       </div>

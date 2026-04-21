@@ -89,6 +89,11 @@ section:nth-child(even) {
   background-color: var(--bg-section-alt);
 }
 
+main > section:not(.hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
 
 /* Animations Global */
 @keyframes fadeInUp {

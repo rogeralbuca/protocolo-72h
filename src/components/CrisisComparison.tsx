@@ -9,8 +9,6 @@ export function CrisisComparison() {
         <p className="section-subtitle text-center">A maioria das famílias entra em colapso nas primeiras 24h por falta de um plano.</p>
 
         <div className="comparison-grid">
-
-          {/* Chaos / Sem Protocolo */}
           <div className="comparison-card chaos-card">
             <div className="card-header">
               <ShieldAlert size={48} className="chaos-icon" />
@@ -44,7 +42,6 @@ export function CrisisComparison() {
             </ul>
           </div>
 
-          {/* Plan / Com Protocolo */}
           <div className="comparison-card plan-card">
             <div className="card-header">
               <ShieldCheck size={48} className="plan-icon" />
@@ -77,15 +74,12 @@ export function CrisisComparison() {
               </li>
             </ul>
           </div>
-
         </div>
-        
-      <div className="comparison-turn">
-        <h2>Não é o mais forte que assume o controle.<br /><span className="highlight-green">É o mais preparado.</span></h2>
-      </div>
-      
-      </div>
 
+        <div className="comparison-turn">
+          <h2>Não é o mais forte que assume o controle.<br /><span className="highlight-green">É o mais preparado.</span></h2>
+        </div>
+      </div>
     </section>
   );
 }
