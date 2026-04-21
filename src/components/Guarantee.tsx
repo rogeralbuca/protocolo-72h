@@ -5,7 +5,7 @@ export function Guarantee() {
     <section className="guarantee">
       <div className="container guarantee-layout">
         <div className="guarantee-box">
-          <img src="/garantia.png" alt="Teste por 7 dias sem risco" className="guarantee-logo" />
+          <img src="/garantia.webp" alt="Teste por 7 dias sem risco" className="guarantee-logo" width="350" height="350" loading="lazy" />
 
           <p className="guarantee-kicker">Teste por 7 dias sem risco</p>
           <h2 className="section-title">Você entra para ganhar clareza, não para correr risco</h2>

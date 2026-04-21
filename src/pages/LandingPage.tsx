@@ -1,17 +1,19 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { Hero } from '../components/Hero';
-import { PainIdent } from '../components/PainIdent';
-import { ProtocolIntro } from '../components/ProtocolIntro';
-import { Storytelling } from '../components/Storytelling';
-import { CrisisComparison } from '../components/CrisisComparison';
-import { Pillars } from '../components/Pillars';
-import { Features } from '../components/Features';
-import { Proof } from '../components/Proof';
-import { Offer } from '../components/Offer';
-import { Author } from '../components/Author';
-import { Guarantee } from '../components/Guarantee';
-import { FinalDecision } from '../components/FinalDecision';
+
+// Lazy loading components below the fold
+const PainIdent = lazy(() => import('../components/PainIdent').then(m => ({ default: m.PainIdent })));
+const ProtocolIntro = lazy(() => import('../components/ProtocolIntro').then(m => ({ default: m.ProtocolIntro })));
+const Storytelling = lazy(() => import('../components/Storytelling').then(m => ({ default: m.Storytelling })));
+const CrisisComparison = lazy(() => import('../components/CrisisComparison').then(m => ({ default: m.CrisisComparison })));
+const Pillars = lazy(() => import('../components/Pillars').then(m => ({ default: m.Pillars })));
+const Features = lazy(() => import('../components/Features').then(m => ({ default: m.Features })));
+const Proof = lazy(() => import('../components/Proof').then(m => ({ default: m.Proof })));
+const Offer = lazy(() => import('../components/Offer').then(m => ({ default: m.Offer })));
+const Author = lazy(() => import('../components/Author').then(m => ({ default: m.Author })));
+const Guarantee = lazy(() => import('../components/Guarantee').then(m => ({ default: m.Guarantee })));
+const FinalDecision = lazy(() => import('../components/FinalDecision').then(m => ({ default: m.FinalDecision })));
 
 export function LandingPage() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -70,7 +72,7 @@ export function LandingPage() {
 
   return (
     <main>
-      <audio ref={audioRef} loop preload="auto" aria-hidden="true" style={{ display: 'none' }}>
+      <audio ref={audioRef} loop preload="none" aria-hidden="true" style={{ display: 'none' }}>
         <source src="/urban-heartline.mp3" type="audio/mpeg" />
       </audio>
 
@@ -87,17 +89,20 @@ export function LandingPage() {
       ) : null}
 
       <Hero />
-      <PainIdent />
-      <ProtocolIntro />
-      <Storytelling />
-      <CrisisComparison />
-      <Pillars />
-      <Features />
-      <Proof />
-      <Offer />
-      <Author />
-      <Guarantee />
-      <FinalDecision />
+      
+      <Suspense fallback={<div style={{ minHeight: '50vh' }}></div>}>
+        <PainIdent />
+        <ProtocolIntro />
+        <Storytelling />
+        <CrisisComparison />
+        <Pillars />
+        <Features />
+        <Proof />
+        <Offer />
+        <Author />
+        <Guarantee />
+        <FinalDecision />
+      </Suspense>
     </main>
   );
 }

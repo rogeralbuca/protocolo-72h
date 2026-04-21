@@ -11,12 +11,19 @@
   <meta name="robots" content="noindex, nofollow" />
   <meta name="description"
     content="Saiba o que fazer nas primeiras 72 horas de crise. Um plano prático para proteger sua família." />
-  <!-- Fonts -->
+  
+  <!-- Preload Critical Images (LCP) -->
+  <link rel="preload" as="image" href="/bg-hero.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/protocolo-72h.svg" fetchpriority="high">
+
+  <!-- Async Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+  </noscript>
 </head>
 
 <body>

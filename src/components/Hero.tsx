@@ -6,7 +6,7 @@ export function Hero() {
       <div className="hero-overlay"></div>
       <div className="container hero-content">
         <div className="hero-text-col">
-          <img src="/protocolo-72h.svg" alt="Protocolo 72H" className="hero-logo" />
+          <img src="/protocolo-72h.svg" alt="Protocolo 72H" className="hero-logo" width="1385" height="356" fetchPriority="high" />
 
           <h1 className="hero-title">
             Se tudo parar hoje...
