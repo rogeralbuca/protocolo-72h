@@ -31,10 +31,10 @@ export function Features() {
               <span>Plano urbano para agir com clareza</span>
             </div>
             <div className="product-sheet product-sheet-map">
-              <span>Mapa Visual 72H</span>
+              <span>Lista de equipamentos 72H</span>
             </div>
             <div className="product-sheet product-sheet-checklist">
-              <span>Checklist de Compras</span>
+              <span>Guia Ilustardo 72H</span>
             </div>
           </div>
 
@@ -44,9 +44,9 @@ export function Features() {
               O material agora se apresenta com mais percepção de produto: guia principal, mapa visual, checklist imprimível e roteiro de ação para consulta rápida em momentos de pressão.
             </p>
             <ul className="product-anchor-list">
-              <li>Guia central para leitura rápida e ação imediata</li>
-              <li>Peças visuais que ajudam sua família a entender o plano</li>
-              <li>Formato pensado para consulta simples e execução prática</li>
+              <li>E-book Protocolo 72H (guia principal)</li>
+              <li>Guia Ilustardo 72H (infográficos)</li>
+              <li>Lista de equipamentos 72H (lista de compras)</li>
             </ul>
           </div>
         </div>

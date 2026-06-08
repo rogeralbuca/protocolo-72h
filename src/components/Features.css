@@ -92,6 +92,13 @@
   border-top: 3px solid var(--accent-action);
 }
 
+.product-sheet-equipment {
+  right: 50px;
+  top: 15px;
+  transform: rotate(14deg);
+  border-top: 3px solid var(--accent-success);
+}
+
 .product-anchor-copy h3 {
   font-size: clamp(1.75rem, 3vw, 2.4rem);
 }

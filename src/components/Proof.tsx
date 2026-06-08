@@ -5,7 +5,7 @@ const testimonials = [
   {
     quote:
       'Eu achava que isso era exagero. Depois que organizei água, energia e função de cada um, percebi o quanto estávamos vulneráveis.',
-    author: 'Pai, 38 anos, Fortaleza',
+    author: 'Pai, 38 anos, Porto Alegre',
   },
   {
     quote:

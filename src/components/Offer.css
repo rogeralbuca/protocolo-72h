@@ -109,6 +109,23 @@
   margin-top: 2px;
 }
 
+.offer-list-bonus {
+  border-left: 2px solid var(--accent-success);
+}
+
+.offer-list-bonus .check-icon {
+  color: var(--accent-success);
+}
+
+.bonus-title {
+  color: var(--accent-success);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
 .offer-justification {
   margin-bottom: 32px;
   padding: 20px 22px;

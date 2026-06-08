@@ -2,10 +2,19 @@ import { Check } from 'lucide-react';
 import './Offer.css';
 
 const offerIncludes = [
-  'Protocolo completo 72H (guia principal)',
-  'Mapa visual 72H',
-  'Checklist de compras para 72H',
+  'E-book Protocolo 72H (guia principal)',
+  'Guia Ilustardo 72H (infográficos)',
+  'Lista de equipamentos 72H (lista de compras)',
 ];
+
+const extras = [
+  'App Guia de Execução 72H (mão na massa)',
+  'Blog Protocolo 72H (artigos sobre sobrevivência e defesa)',
+  'Loja Protocolo 72H (equipamentos de sobrevivência)',
+  'Canal Telegram Protocolo 72H (canal novidades e atualizações)',
+  'Grupo Telegram Protocolo 72H (Comunidade exclusiva)',
+];
+
 
 export function Offer() {
   return (
@@ -17,9 +26,9 @@ export function Offer() {
               <h2>O que você garante hoje</h2>
               <div className="price-tag">
                 <span className="price-label">Está pronto. Apenas</span>
-                <span className="price-value">R$ 47</span>
+                <span className="price-value">R$ 97</span>
                 <span className="price-compare">
-                  Você pode gastar R$47 com algo que esquece amanhã ou usar isso para garantir que sua família não dependa da sorte.
+                  Você pode gastar R$97 com algo que esquece amanhã ou usar isso para garantir que sua família não dependa da sorte.
                 </span>
               </div>
             </div>
@@ -27,6 +36,18 @@ export function Offer() {
             <div className="offer-list">
               <ul>
                 {offerIncludes.map((item, idx) => (
+                  <li key={idx}>
+                    <Check className="check-icon" size={20} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="offer-list offer-list-bonus">
+              <h3 className="bonus-title">Bônus Especiais Inclusos</h3>
+              <ul>
+                {extras.map((item, idx) => (
                   <li key={idx}>
                     <Check className="check-icon" size={20} />
                     <span>{item}</span>
