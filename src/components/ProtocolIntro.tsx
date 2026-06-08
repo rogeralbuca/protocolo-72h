@@ -30,7 +30,7 @@ export function ProtocolIntro() {
           </div>
 
           <div className="intro-cta-wrapper">
-            <a href="#" className="cta-button">
+            <a href="#offer" className="cta-button">
               QUERO TER ACESSO AGORA
             </a>
           </div>

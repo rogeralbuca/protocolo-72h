@@ -12,7 +12,7 @@ export function FinalDecision() {
           <p className="final-decision-text">
              Você vai continuar adiando ou se vai assumir o controle hoje?
           </p>
-          <a href="#" className="cta-button">
+          <a href="https://pay.hotmart.com/B106211608T" className="cta-button">
             QUERO TER CONTROLE AGORA
           </a>
         </div>
