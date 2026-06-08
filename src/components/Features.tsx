@@ -31,9 +31,6 @@ export function Features() {
               <span>Plano urbano para agir com clareza</span>
             </div>
             <div className="product-sheet product-sheet-map">
-              <span>Lista de equipamentos 72H</span>
-            </div>
-            <div className="product-sheet product-sheet-checklist">
               <span>Guia Ilustardo 72H</span>
             </div>
           </div>
@@ -46,7 +43,6 @@ export function Features() {
             <ul className="product-anchor-list">
               <li>E-book Protocolo 72H (guia principal)</li>
               <li>Guia Ilustardo 72H (infográficos)</li>
-              <li>Lista de equipamentos 72H (lista de compras)</li>
             </ul>
           </div>
         </div>

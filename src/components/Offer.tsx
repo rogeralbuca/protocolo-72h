@@ -4,13 +4,13 @@ import './Offer.css';
 const offerIncludes = [
   'E-book Protocolo 72H (guia principal)',
   'Guia Ilustardo 72H (infográficos)',
-  'Lista de equipamentos 72H (lista de compras)',
 ];
 
 const extras = [
   'App Guia de Execução 72H (mão na massa)',
   'Blog Protocolo 72H (artigos sobre sobrevivência e defesa)',
   'Loja Protocolo 72H (equipamentos de sobrevivência)',
+  'Playlist Protocolo 72H (podcasts spotify)',
   'Canal Telegram Protocolo 72H (canal novidades e atualizações)',
   'Grupo Telegram Protocolo 72H (Comunidade exclusiva)',
 ];
