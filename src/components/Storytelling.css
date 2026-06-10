@@ -72,14 +72,18 @@
 }
 
 .timeline-item-alert .timeline-icon {
-  border: 1px solid var(--border-strong);
-  color: var(--accent-support);
-  background: rgba(21, 28, 37, 0.92);
-  box-shadow: none;
+  border: 1px solid rgba(255, 91, 77, 0.4);
+  color: var(--accent-danger);
+  background: rgba(26, 33, 43, 0.95);
+  box-shadow: 0 0 15px rgba(255, 91, 77, 0.15);
 }
 
 .timeline-item-alert .timeline-content h3 {
-  color: var(--text-primary);
+  color: var(--accent-danger);
+}
+
+.icon-tragic {
+  color: var(--accent-danger);
 }
 
 .story-climax {

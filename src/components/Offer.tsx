@@ -1,12 +1,9 @@
 import { Check } from 'lucide-react';
 import './Offer.css';
 
-const offerIncludes = [
-  'E-book Protocolo 72H (guia principal)',
+const offerItems = [
+  'Protocolo 72H (plano de ação para agir com clareza)',
   'Guia Ilustardo 72H (infográficos)',
-];
-
-const extras = [
   'App Guia de Execução 72H (mão na massa)',
   'Blog Protocolo 72H (artigos sobre sobrevivência e defesa)',
   'Loja Protocolo 72H (equipamentos de sobrevivência)',
@@ -14,7 +11,6 @@ const extras = [
   'Canal Telegram Protocolo 72H (canal novidades e atualizações)',
   'Grupo Telegram Protocolo 72H (Comunidade exclusiva)',
 ];
-
 
 export function Offer() {
   return (
@@ -35,19 +31,7 @@ export function Offer() {
 
             <div className="offer-list">
               <ul>
-                {offerIncludes.map((item, idx) => (
-                  <li key={idx}>
-                    <Check className="check-icon" size={20} />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="offer-list offer-list-bonus">
-              <h3 className="bonus-title">Bônus Especiais Inclusos</h3>
-              <ul>
-                {extras.map((item, idx) => (
+                {offerItems.map((item, idx) => (
                   <li key={idx}>
                     <Check className="check-icon" size={20} />
                     <span>{item}</span>

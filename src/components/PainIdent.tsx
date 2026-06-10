@@ -3,7 +3,7 @@ import './PainIdent.css';
 
 export function PainIdent() {
   return (
-    <section className="pain-ident">
+    <section id="pain" className="pain-ident">
       <div className="container">
         <div className="pain-grid">
           <div className="pain-item">

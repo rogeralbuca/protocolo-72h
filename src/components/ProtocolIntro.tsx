@@ -1,3 +1,4 @@
+import { Check } from 'lucide-react';
 import './ProtocolIntro.css';
 
 export function ProtocolIntro() {
@@ -20,9 +21,18 @@ export function ProtocolIntro() {
           </p>
 
           <ul className="intro-benefits">
-            <li>✔ Sem teoria desnecessária</li>
-            <li>✔ Sem cenário fantasioso</li>
-            <li>✔ Sem complicação</li>
+            <li>
+              <Check size={18} className="intro-check-icon" />
+              <span>Sem paranoia</span>
+            </li>
+            <li>
+              <Check size={18} className="intro-check-icon" />
+              <span>Sem fantasia</span>
+            </li>
+            <li>
+              <Check size={18} className="intro-check-icon" />
+              <span>Sem complicação</span>
+            </li>
           </ul>
 
           <div className="intro-action">
@@ -30,8 +40,8 @@ export function ProtocolIntro() {
           </div>
 
           <div className="intro-cta-wrapper">
-            <a href="#offer" className="cta-button">
-              QUERO TER ACESSO AGORA
+            <a href="#story" className="cta-button">
+              VER COMO O COLAPSO ACONTECE
             </a>
           </div>
         </div>

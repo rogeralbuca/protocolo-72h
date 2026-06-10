@@ -30,8 +30,8 @@ export function Hero() {
           </p>
 
           <div className="hero-cta-wrapper">
-            <a href="#offer" className="cta-button">
-              QUERO SABER EXATAMENTE O QUE FAZER
+            <a href="#pain" className="cta-button">
+              VER O QUE ESTÁ EM JOGO
             </a>
           </div>
         </div>

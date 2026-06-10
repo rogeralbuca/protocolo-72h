@@ -22,8 +22,7 @@
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.pain-grid {
+}.pain-grid {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -35,55 +34,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  background: transparent;
-  min-width: 200px;
+  gap: 16px;
+  background: rgba(26, 33, 43, 0.65); /* var(--bg-card) with transparency */
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: calc(25% - 18px);
+  min-width: 220px;
   position: relative;
   text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.pain-item:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-action);
+  background: rgba(26, 33, 43, 0.9);
+  box-shadow: 0 15px 35px -5px rgba(240, 103, 31, 0.15), 0 0 15px rgba(240, 103, 31, 0.05);
 }
 
 .pain-icon-main {
-  color: var(--text-muted);
-  position: relative;
+  color: var(--accent-action) !important;
+  transition: transform 0.3s ease;
 }
 
-/* Simulating the orange accents from the print */
-.pain-item:nth-child(1) .pain-icon-main { stroke: var(--text-primary); }
-.pain-item:nth-child(2) .pain-icon-main { stroke: var(--text-primary); }
-.pain-item:nth-child(3) .pain-icon-main { stroke: var(--text-primary); }
-.pain-item:nth-child(4) .pain-icon-main { stroke: var(--text-primary); color: var(--accent-action); }
-
-.pain-item::after {
-  content: 'X';
-  position: absolute;
-  top: 15px;
-  font-size: 20px;
-  color: var(--accent-action);
-  font-family: var(--font-body);
-  font-weight: 800;
-  line-height: 1;
+.pain-item:hover .pain-icon-main {
+  transform: scale(1.15);
 }
-
-.pain-item:nth-child(1)::after { display: none; /* First icon uses native plug zap */ }
-.pain-item:nth-child(2)::after { top: 12px; }
-.pain-item:nth-child(3)::after { top: 20px; left: 52%; font-size: 16px; }
-.pain-item:nth-child(4)::after { display: none; }
 
 .pain-item-title {
   display: block;
   color: var(--text-primary);
-  font-size: 1.125rem;
-  font-family: var(--font-body);
-  font-weight: 400;
-  margin-bottom: 2px;
-  letter-spacing: 0;
-  text-transform: none;
+  font-size: 1.2rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .pain-item-desc {
   display: block;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-family: var(--font-body);
   letter-spacing: 0;
   text-transform: none;
